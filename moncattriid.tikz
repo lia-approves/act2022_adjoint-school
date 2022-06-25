@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3, 1) {$(x \otimes I) \otimes y$};
+		\node [style=none] (1) at (-0.75, 1) {};
+		\node [style=none] (2) at (0.75, 1) {};
+		\node [style=none] (3) at (0, 1.5) {\tiny$\alpha_{x,I,y}$};
+		\node [style=none] (4) at (3, 1) {$x \otimes (I \otimes y)$};
+		\node [style=none] (5) at (-2, 0.25) {};
+		\node [style=none] (6) at (-1, -0.5) {};
+		\node [style=none] (7) at (0, -1.25) {$x \otimes y$};
+		\node [style=none] (8) at (1, -0.5) {};
+		\node [style=none] (9) at (2, 0.25) {};
+		\node [style=none] (10) at (-2.75, -0.25) {\tiny$\rho_x \otimes \text{id}_y$};
+		\node [style=none] (11) at (2.75, -0.25) {\tiny$\text{id}_x \otimes \lambda_y$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=diredge] (1.center) to (2.center);
+		\draw [style=diredge] (5.center) to (6.center);
+		\draw [style=diredge] (9.center) to (8.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
